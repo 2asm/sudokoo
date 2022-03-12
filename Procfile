@@ -1,1 +1,1 @@
-web: gunicorn sudokoo:app
+web: gunicorn app:app

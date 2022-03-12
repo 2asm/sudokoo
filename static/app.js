@@ -21,7 +21,7 @@ function validateInput(value) {
 let grid_sol = [];
 
 (async () => {
-    const res = await fetch("http://127.0.0.1:5000/sudoku", {method: 'POST'})
+    const res = await fetch("https://sudokoo.herokuapp.com/sudoku", {method: 'POST'})
     const content = await res.json()
     grid_sol = content[0]
     const grid = content[1]

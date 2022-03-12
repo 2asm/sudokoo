@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <title>Sudokoo</title>
+</head>
+<body>
+    <div class="outputs">
+       <div id="game-grid">
+           <div id="table">
+               <table>
+                   <tbody>
+                       <tr id="row1">
+                           
+                           <td id="t01"><input id="c00" class="Input row1 col1 grid1" autocomplete="off"></td>
+                           <td id="t02"><input id="c01" class="Input row1 col2 grid1" autocomplete="off"></td>
+                           <td id="t03"><input id="c02" class="Input row1 col3 grid1" autocomplete="off"></td>
+                           <td id="t04"><input id="c03" class="Input row1 col4 grid2" autocomplete="off"></td>
+                           <td id="t05"><input id="c04" class="Input row1 col5 grid2" autocomplete="off"></td>
+                           <td id="t06"><input id="c05" class="Input row1 col6 grid2" autocomplete="off"></td>
+                           <td id="t07"><input id="c06" class="Input row1 col7 grid3" autocomplete="off"></td>
+                           <td id="t08"><input id="c07" class="Input row1 col8 grid3" autocomplete="off"></td>
+                           <td id="t09"><input id="c08" class="Input row1 col9 grid3" autocomplete="off"></td>
+
+                       </tr>
+                       <tr id="row2">
+
+                           <td id="t11"><input id="c10" class="Input row2 col1 grid1" autocomplete="off"></td>
+                           <td id="t12"><input id="c11" class="Input row2 col2 grid1" autocomplete="off"></td>
+                           <td id="t13"><input id="c12" class="Input row2 col3 grid1" autocomplete="off"></td>
+                           <td id="t14"><input id="c13" class="Input row2 col4 grid2" autocomplete="off"></td>
+                           <td id="t15"><input id="c14" class="Input row2 col5 grid2" autocomplete="off"></td>
+                           <td id="t16"><input id="c15" class="Input row2 col6 grid2" autocomplete="off"></td>
+                           <td id="t17"><input id="c16" class="Input row2 col7 grid3" autocomplete="off"></td>
+                           <td id="t18"><input id="c17" class="Input row2 col8 grid3" autocomplete="off"></td>
+                           <td id="t19"><input id="c18" class="Input row2 col9 grid3" autocomplete="off"></td>
+
+
+                       </tr>
+                       <tr id="row3">
+
+                           <td id="t21"><input id="c20" class="Input row3 col1 grid1" autocomplete="off"></td>
+                           <td id="t22"><input id="c21" class="Input row3 col2 grid1" autocomplete="off"></td>
+                           <td id="t23"><input id="c22" class="Input row3 col3 grid1" autocomplete="off"></td>
+                           <td id="t24"><input id="c23" class="Input row3 col4 grid2" autocomplete="off"></td>
+                           <td id="t25"><input id="c24" class="Input row3 col5 grid2" autocomplete="off"></td>
+                           <td id="t26"><input id="c25" class="Input row3 col6 grid2" autocomplete="off"></td>
+                           <td id="t27"><input id="c26" class="Input row3 col7 grid3" autocomplete="off"></td>
+                           <td id="t28"><input id="c27" class="Input row3 col8 grid3" autocomplete="off"></td>
+                           <td id="t29"><input id="c28" class="Input row3 col9 grid3" autocomplete="off"></td>
+
+
+                       </tr>
+                       <tr id="row4">
+
+                           <td id="t31"><input id="c30" class="Input row4 col1 grid4" autocomplete="off"></td>
+                           <td id="t32"><input id="c31" class="Input row4 col2 grid4" autocomplete="off"></td>
+                           <td id="t33"><input id="c32" class="Input row4 col3 grid4" autocomplete="off"></td>
+                           <td id="t34"><input id="c33" class="Input row4 col4 grid5" autocomplete="off"></td>
+                           <td id="t35"><input id="c34" class="Input row4 col5 grid5" autocomplete="off"></td>
+                           <td id="t36"><input id="c35" class="Input row4 col6 grid5" autocomplete="off"></td>
+                           <td id="t37"><input id="c36" class="Input row4 col7 grid6" autocomplete="off"></td>
+                           <td id="t38"><input id="c37" class="Input row4 col8 grid6" autocomplete="off"></td>
+                           <td id="t39"><input id="c38" class="Input row4 col9 grid6" autocomplete="off"></td>
+                       </tr>
+                       <tr id="row5">
+
+                           <td id="t41"><input id="c40" class="Input row5 col1 grid4" autocomplete="off"></td>
+                           <td id="t42"><input id="c41" class="Input row5 col2 grid4" autocomplete="off"></td>
+                           <td id="t43"><input id="c42" class="Input row5 col3 grid4" autocomplete="off"></td>
+                           <td id="t44"><input id="c43" class="Input row5 col4 grid5" autocomplete="off"></td>
+                           <td id="t45"><input id="c44" class="Input row5 col5 grid5" autocomplete="off"></td>
+                           <td id="t46"><input id="c45" class="Input row5 col6 grid5" autocomplete="off"></td>
+                           <td id="t47"><input id="c46" class="Input row5 col7 grid6" autocomplete="off"></td>
+                           <td id="t48"><input id="c47" class="Input row5 col8 grid6" autocomplete="off"></td>
+                           <td id="t49"><input id="c48" class="Input row5 col9 grid6" autocomplete="off"></td>
+
+                       </tr>
+                       <tr id="row6">
+
+                           <td id="t51"><input id="c50" class="Input row6 col1 grid4" autocomplete="off"></td>
+                           <td id="t52"><input id="c51" class="Input row6 col2 grid4" autocomplete="off"></td>
+                           <td id="t53"><input id="c52" class="Input row6 col3 grid4" autocomplete="off"></td>
+                           <td id="t54"><input id="c53" class="Input row6 col4 grid5" autocomplete="off"></td>
+                           <td id="t55"><input id="c54" class="Input row6 col5 grid5" autocomplete="off"></td>
+                           <td id="t56"><input id="c55" class="Input row6 col6 grid5" autocomplete="off"></td>
+                           <td id="t57"><input id="c56" class="Input row6 col7 grid6" autocomplete="off"></td>
+                           <td id="t58"><input id="c57" class="Input row6 col8 grid6" autocomplete="off"></td>
+                           <td id="t59"><input id="c58" class="Input row6 col9 grid6" autocomplete="off"></td>
+
+                       </tr>
+                       <tr id="row7">
+
+                           <td id="t61"><input id="c60" class="Input row7 col1 grid7" autocomplete="off"></td>
+                           <td id="t62"><input id="c61" class="Input row7 col2 grid7" autocomplete="off"></td>
+                           <td id="t63"><input id="c62" class="Input row7 col3 grid7" autocomplete="off"></td>
+                           <td id="t64"><input id="c63" class="Input row7 col4 grid8" autocomplete="off"></td>
+                           <td id="t65"><input id="c64" class="Input row7 col5 grid8" autocomplete="off"></td>
+                           <td id="t66"><input id="c65" class="Input row7 col6 grid8" autocomplete="off"></td>
+                           <td id="t67"><input id="c66" class="Input row7 col7 grid9" autocomplete="off"></td>
+                           <td id="t68"><input id="c67" class="Input row7 col8 grid9" autocomplete="off"></td>
+                           <td id="t69"><input id="c68" class="Input row7 col9 grid9" autocomplete="off"></td>
+
+                       </tr>
+                       <tr id="row8">
+
+                           <td id="t71"><input id="c70" class="Input row8 col1 grid7" autocomplete="off"></td>
+                           <td id="t72"><input id="c71" class="Input row8 col2 grid7" autocomplete="off"></td>
+                           <td id="t73"><input id="c72" class="Input row8 col3 grid7" autocomplete="off"></td>
+                           <td id="t74"><input id="c73" class="Input row8 col4 grid8" autocomplete="off"></td>
+                           <td id="t75"><input id="c74" class="Input row8 col5 grid8" autocomplete="off"></td>
+                           <td id="t76"><input id="c75" class="Input row8 col6 grid8" autocomplete="off"></td>
+                           <td id="t77"><input id="c76" class="Input row8 col7 grid9" autocomplete="off"></td>
+                           <td id="t78"><input id="c77" class="Input row8 col8 grid9" autocomplete="off"></td>
+                           <td id="t79"><input id="c78" class="Input row8 col9 grid9" autocomplete="off"></td>
+
+                       </tr>
+                       <tr id="row9">
+
+                           <td id="t81"><input id="c80" class="Input row9 col1 grid7" autocomplete="off"></td>
+                           <td id="t82"><input id="c81" class="Input row9 col2 grid7" autocomplete="off"></td>
+                           <td id="t83"><input id="c82" class="Input row9 col3 grid7" autocomplete="off"></td>
+                           <td id="t84"><input id="c83" class="Input row9 col4 grid8" autocomplete="off"></td>
+                           <td id="t85"><input id="c84" class="Input row9 col5 grid8" autocomplete="off"></td>
+                           <td id="t86"><input id="c85" class="Input row9 col6 grid8" autocomplete="off"></td>
+                           <td id="t87"><input id="c86" class="Input row9 col7 grid9" autocomplete="off"></td>
+                           <td id="t88"><input id="c87" class="Input row9 col8 grid9" autocomplete="off"></td>
+                           <td id="t89"><input id="c88" class="Input row9 col9 grid9" autocomplete="off"></td>
+
+                       </tr>
+                   </tbody>
+               </table>
+           </div>
+        </div>
+   </div>
+   <br/>
+   <div class="btn"><button id="checkbtn"><strong>Check</strong></button></div>
+   <br/>
+   <div id="msg"></div>
+    <script src="{{url_for('static',filename='app.js')}}"></script>
+</body>
+</html>

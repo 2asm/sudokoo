@@ -2,6 +2,16 @@ body{
     text-align: center;
 }
 
+#header{
+    text-align: center;
+}
+
+#header img {
+    vertical-align: middle;
+    height: 32px;
+}
+  
+
 table {
     position: relative;
     width: fit-content;
